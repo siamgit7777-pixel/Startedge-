@@ -1,11 +1,12 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import Card from "../Components/Card";
 
 export default function Subscriptions() {
   return (
     <div className="max-w-7xl mx-auto">
       <img
-        className="w-full h-[500px] object-cover rounded-lg"
+        className="w-full h-[250px] md:h-[400px] object-cover rounded-lg"
         src="https://i0.wp.com/picjumbo.com/wp-content/uploads/green-natural-background-with-wooden-surface-free-image.jpeg?w=2210&quality=70"
         alt=""
       />
@@ -106,7 +107,16 @@ export default function Subscriptions() {
       </div>
 
       {/* Card */}
-      <div></div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 my-10">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }
