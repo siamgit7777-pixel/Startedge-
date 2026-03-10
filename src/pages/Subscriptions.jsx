@@ -11,7 +11,12 @@ export default function Subscriptions() {
         alt=""
       />
 
-      <div>
+      <div className="mt-10">
+        <div className="flex justify-between">
+          <h4 className="text-gray-700">Categories</h4>
+          <button className="cursor-pointer">View All</button>
+        </div>
+
         <Marquee className="text-xl text-gray-800 my-10" speed={50}>
           <div className="flex items-center">
             <button className="cursor-pointer">
