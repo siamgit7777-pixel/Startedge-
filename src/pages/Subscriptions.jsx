@@ -107,7 +107,7 @@ export default function Subscriptions() {
       </div>
 
       {/* Card */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 my-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-5 my-10">
         <Card />
         <Card />
         <Card />
