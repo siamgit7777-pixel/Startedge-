@@ -43,7 +43,7 @@ export default function SubscriptionCatagory() {
       </div>
 
       {/* Marquee */}
-      <Marquee speed={50} pauseOnHover={true} className="my-6">
+      <Marquee speed={50} autoFill={true} className="my-6">
         {items.map((item, index) => (
           <button
             key={index}

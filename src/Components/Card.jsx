@@ -11,7 +11,7 @@ export default function Card({ prod }) {
         src={canvaImg}
         alt=""
       />
-      <p className="text-center">{prod.prodTitle}</p>
+      <p className="text-center line-clamp-2">{prod.prodTitle}</p>
       <div className="flex items-center space-x-2">
         <span className="text-md md:text-lg font-bold">{prod.prodPrice}</span>
         <span className="text-gray-500 line-through">{prod.prodOldPrice}</span>
