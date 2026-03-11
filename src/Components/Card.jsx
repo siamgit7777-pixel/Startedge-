@@ -1,17 +1,20 @@
 import React from "react";
+import canvaImg from "../assets/WhatsApp Image 2026-03-09 at 12.38.48 AM.jpeg";
 
-export default function Card() {
+export default function Card({ prod }) {
+  console.log(prod);
+
   return (
-    <div className="border border-gray-200 p-5 items-center rounded-lg mb-5 mx-2">
+    <div className="border border-gray-200 p-5 items-center rounded-lg mb-5 mx-2 flex flex-col items-center justify-center">
       <img
-        className="w-3xs rounded-lg object-cover mb-3"
-        src="https://adobebazar.com.bd/wp-content/uploads/2025/05/Canva.png"
+        className="w-3xs rounded-lg object-cover mb-3 "
+        src={canvaImg}
         alt=""
       />
-      <p>Canva pro (edu) for 6 month official all device support </p>
+      <p className="text-center">{prod.prodTitle}</p>
       <div className="flex items-center space-x-2">
-        <span className="text-md md:text-lg font-bold">৳59</span>
-        <span className="text-gray-500 line-through">৳500</span>
+        <span className="text-md md:text-lg font-bold">{prod.prodPrice}</span>
+        <span className="text-gray-500 line-through">{prod.prodOldPrice}</span>
       </div>
       <button className="w-full bg-orange-500 text-white py-2 rounded mb-2 cursor-pointer">
         অর্ডার করুন

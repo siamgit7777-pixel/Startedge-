@@ -1,126 +1,75 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import Card from "../Components/Card";
+import SubscriptionCatagory from "../Components/SubscriptionCatagory";
 
 export default function Subscriptions() {
+  const productsItems = [
+    {
+      prodImg: "https://adobebazar.com.bd/wp-content/uploads/2025/05/Canva.png",
+      prodTitle: "Canva pro (edu) for 6 month official all device support",
+      prodPrice: "৳59",
+      prodOldPrice: "৳500",
+    },
+    {
+      prodImg: "https://adobebazar.com.bd/wp-content/uploads/2025/05/Canva.png",
+      prodTitle: "Capcart pro (edu) for 6 month official all device support",
+      prodPrice: "৳400",
+      prodOldPrice: "৳2500",
+    },
+    {
+      prodImg: "https://adobebazar.com.bd/wp-content/uploads/2025/05/Canva.png",
+      prodTitle: "Capcart pro (edu) for 6 month official all device support",
+      prodPrice: "৳400",
+      prodOldPrice: "৳1500",
+    },
+    {
+      prodImg: "https://adobebazar.com.bd/wp-content/uploads/2025/05/Canva.png",
+      prodTitle: "Capcart pro (edu) for 6 month official all device support",
+      prodPrice: "৳700",
+      prodOldPrice: "৳8000",
+    },
+    {
+      prodImg: "https://adobebazar.com.bd/wp-content/uploads/2025/05/Canva.png",
+      prodTitle: "Capcart pro (edu) for 6 month official all device support",
+      prodPrice: "৳59",
+      prodOldPrice: "৳500",
+    },
+    {
+      prodImg: "https://adobebazar.com.bd/wp-content/uploads/2025/05/Canva.png",
+      prodTitle: "Capcart pro (edu) for 6 month official all device support",
+      prodPrice: "৳400",
+      prodOldPrice: "৳2500",
+    },
+    {
+      prodImg: "https://adobebazar.com.bd/wp-content/uploads/2025/05/Canva.png",
+      prodTitle: "Capcart pro (edu) for 6 month official all device support",
+      prodPrice: "৳400",
+      prodOldPrice: "৳1500",
+    },
+    {
+      prodImg: "https://adobebazar.com.bd/wp-content/uploads/2025/05/Canva.png",
+      prodTitle: "Capcart pro (edu) for 6 month official all device support",
+      prodPrice: "৳700",
+      prodOldPrice: "৳8000",
+    },
+  ];
+
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-11/12 mx-auto">
       <img
         className="w-full h-[250px] md:h-[400px] object-cover rounded-lg"
         src="https://i0.wp.com/picjumbo.com/wp-content/uploads/green-natural-background-with-wooden-surface-free-image.jpeg?w=2210&quality=70"
         alt=""
       />
 
-      <div className="mt-10">
-        <div className="flex justify-between">
-          <h4 className="text-gray-700">Categories</h4>
-          <button className="cursor-pointer">View All</button>
-        </div>
-
-        <Marquee className="text-xl text-gray-800 my-10" speed={50}>
-          <div className="flex items-center">
-            <button className="cursor-pointer">
-              {" "}
-              <img
-                className="w-32 object-cover rounded-full mx-4"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS217W9xTUbUdeifHOfE8ik7miluwNl1eIp8A&s"
-                alt=""
-              />
-            </button>
-            <button className="cursor-pointer">
-              {" "}
-              <img
-                className="w-32 object-cover rounded-full mx-4"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS217W9xTUbUdeifHOfE8ik7miluwNl1eIp8A&s"
-                alt=""
-              />
-            </button>
-            <button className="cursor-pointer">
-              {" "}
-              <img
-                className="w-32 object-cover rounded-full mx-4"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS217W9xTUbUdeifHOfE8ik7miluwNl1eIp8A&s"
-                alt=""
-              />
-            </button>
-            <button className="cursor-pointer">
-              {" "}
-              <img
-                className="w-32 object-cover rounded-full mx-4"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS217W9xTUbUdeifHOfE8ik7miluwNl1eIp8A&s"
-                alt=""
-              />
-            </button>
-            <button className="cursor-pointer">
-              {" "}
-              <img
-                className="w-32 object-cover rounded-full mx-4"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS217W9xTUbUdeifHOfE8ik7miluwNl1eIp8A&s"
-                alt=""
-              />
-            </button>
-            <button className="cursor-pointer">
-              {" "}
-              <img
-                className="w-32 object-cover rounded-full mx-4"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS217W9xTUbUdeifHOfE8ik7miluwNl1eIp8A&s"
-                alt=""
-              />
-            </button>
-            <button className="cursor-pointer">
-              {" "}
-              <img
-                className="w-32 object-cover rounded-full mx-4"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS217W9xTUbUdeifHOfE8ik7miluwNl1eIp8A&s"
-                alt=""
-              />
-            </button>
-            <button className="cursor-pointer">
-              {" "}
-              <img
-                className="w-32 object-cover rounded-full mx-4"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS217W9xTUbUdeifHOfE8ik7miluwNl1eIp8A&s"
-                alt=""
-              />
-            </button>
-            <button className="cursor-pointer">
-              {" "}
-              <img
-                className="w-32 object-cover rounded-full mx-4"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS217W9xTUbUdeifHOfE8ik7miluwNl1eIp8A&s"
-                alt=""
-              />
-            </button>
-            <button className="cursor-pointer">
-              {" "}
-              <img
-                className="w-32 object-cover rounded-full mx-4"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS217W9xTUbUdeifHOfE8ik7miluwNl1eIp8A&s"
-                alt=""
-              />
-            </button>
-            <button className="cursor-pointer">
-              {" "}
-              <img
-                className="w-32 object-cover rounded-full mx-4"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS217W9xTUbUdeifHOfE8ik7miluwNl1eIp8A&s"
-                alt=""
-              />
-            </button>
-          </div>
-        </Marquee>
-      </div>
+      <SubscriptionCatagory />
 
       {/* Card */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-5 my-10">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {productsItems.map((prod) => {
+          return <Card prod={prod} />;
+        })}
       </div>
     </div>
   );
