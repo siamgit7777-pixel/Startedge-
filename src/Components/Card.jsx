@@ -11,17 +11,25 @@ export default function Card({ prod }) {
         src={canvaImg}
         alt=""
       />
-      <p className="text-center line-clamp-2">{prod.prodTitle}</p>
+      <p className="text-center line-clamp-2" title={prod.prodTitle}>
+        {prod.prodTitle}
+      </p>
       <div className="flex items-center space-x-2">
         <span className="text-md md:text-lg font-bold">{prod.prodPrice}</span>
         <span className="text-gray-500 line-through">{prod.prodOldPrice}</span>
       </div>
       <button className="w-full bg-orange-500 text-white py-2 rounded mb-2 cursor-pointer">
-        অর্ডার করুন
+        <a
+          href="https://wa.me/8801625239776"
+          target="_blank"
+          className="w-full bg-orange-500 text-white  rounded mb-2 cursor-pointer block text-center"
+        >
+          অর্ডার করুন
+        </a>
       </button>
-      <button className="w-full border border-orange-500 text-orange-500 py-2 rounded cursor-pointer">
+      {/* <button className="w-full border border-orange-500 text-orange-500 py-2 rounded cursor-pointer">
         আরও দেখুন
-      </button>
+      </button> */}
     </div>
   );
 }
