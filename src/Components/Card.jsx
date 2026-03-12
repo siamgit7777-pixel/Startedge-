@@ -20,9 +20,8 @@ export default function Card({ prod }) {
       </div>
       <button className="w-full bg-orange-500 text-white py-2 rounded mb-2 cursor-pointer">
         <a
-          href="https://wa.me/8801625239776"
+          href={`https://wa.me/8801625239776?text=আমি%20এই%20প্রোডাক্টটি%20অর্ডার%20করতে%20চাই:%20${encodeURIComponent(prod.prodTitle)}`}
           target="_blank"
-          className="w-full bg-orange-500 text-white  rounded mb-2 cursor-pointer block text-center"
         >
           অর্ডার করুন
         </a>
