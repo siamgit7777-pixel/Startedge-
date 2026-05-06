@@ -7,6 +7,7 @@ import Courses from "../pages/Courses";
 import { Subscript } from "lucide-react";
 import Subscriptions from "../pages/Subscriptions";
 import Portfolio from "../pages/Portfolio";
+import SocialImpact from "../pages/SocialImpact";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         Component: Portfolio,
+      },
+      {
+        path: "/social-impact",
+        Component: SocialImpact,
       },
     ],
   },
