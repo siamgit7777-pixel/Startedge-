@@ -20,7 +20,7 @@ export default function CTA() {
   return (
     <>
       {/* CTA Section */}
-      <section className="py-20 px-5 bg-gray-900">
+      <section id="donor-section" className="py-20 px-5 bg-gray-900">
         <div className="max-w-2xl mx-auto text-center">
           <FaDroplet className="text-red-500 text-4xl mx-auto mb-5" />
 

@@ -79,7 +79,14 @@ export default function Hero() {
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 mb-14">
             {/* Donor Button */}
-            <button className="bg-white text-red-600 font-bold px-8 py-4 rounded-xl hover:shadow-xl transition-all duration-300 flex items-center gap-2">
+            <button
+              onClick={() => {
+                document.getElementById("donor-section")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="bg-white text-red-600 font-bold px-8 py-4 rounded-xl hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+            >
               <FaUserPlus />
               Join as a Donor
             </button>
